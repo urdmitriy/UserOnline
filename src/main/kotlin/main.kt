@@ -1,5 +1,5 @@
 fun main (){
-    agoToText(60*60+1)
+    agoToText(60*21+1)
 }
 
 fun agoToText(timeSecond: Int) = println(
@@ -14,7 +14,7 @@ fun agoToText(timeSecond: Int) = println(
 )
 
 fun minutsWord(timeSecond: Int): String {
-    return if (timeSecond % 100 != 11 && timeSecond % 100 != 12 && timeSecond % 100 != 13) when {
+    return if (timeSecond % 100 != 11 && timeSecond % 100 != 12 && timeSecond % 100 != 13 && timeSecond % 100 != 14) when {
         timeSecond % 10 == 1 ->  "минуту"
         timeSecond % 10 >= 2 && timeSecond % 10 <= 4 ->  "минуты"
         timeSecond == 60 -> "час"
